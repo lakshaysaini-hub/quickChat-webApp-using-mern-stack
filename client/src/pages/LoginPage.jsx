@@ -116,10 +116,10 @@ const LoginPage = () => {
             </p>
           ) : (
             <p className="text-sm text-gray-600">
-              Create an accont
+              Create an accont!
               <span
                 onClick={() => setCurrState("Sign Up")}
-                className="font-medium text-violet-500 cursor-pointer"
+                className="pl-2 font-medium text-violet-500 cursor-pointer"
               >
                 Click here
               </span>
