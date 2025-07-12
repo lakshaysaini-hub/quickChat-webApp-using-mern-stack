@@ -44,11 +44,11 @@ app.use(cors());
 //Routes setup
 app.use("/api/status", (req, res) => res.send("Server is live"));
 app.use("/api/auth", userRouter);
-app.use("api/messages", messageRouter);
+app.use("/api/messages", messageRouter);
 
 //connect to MongoDB
 await connectDB();
 
-const PORT = process.env.port || 5001;
+const PORT = process.env.PORT || 5001;
 
 server.listen(PORT, () => console.log("Server is running on PORT:" + PORT));
